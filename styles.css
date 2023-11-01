@@ -1,0 +1,258 @@
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+.header__logo {
+    width: 4rem;
+    height: auto;
+}
+
+.header__menu {
+    display: flex;
+    gap: 1rem;
+}
+
+/*hero*/
+.hero {
+    margin-top: 17rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+.hero__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(1.6);
+}
+
+@media (min-aspect-ratio: 16/9){
+    .hero__video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .hero__video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    max-width: 70%;
+    margin-inline: auto;
+    letter-spacing: -0.05rem;
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+.hero__scroll {
+    margin-top: 17rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.hero__arrow {
+    font-size: 0.7rem;
+    margin-top: -0.3rem;
+}
+
+/*trusted*/
+
+.trusted {
+    margin-top: 1rem;
+    background-color: rgba(196, 189, 189);
+    text-align: center;
+    height: 10rem;
+}
+
+.trusted__title {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/*catch*/
+.catch {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.catch__title {
+
+}
+
+.catch__text {
+    margin: 1.5rem auto;
+    max-width: 75ch;
+}
+
+/*showreel*/
+
+.showreel {
+    margin-top: 5rem;
+    text-align: center;
+    color: #D9D9D9;
+    background-color: black;
+    height: 30rem;
+    padding-top: 13rem;
+}
+
+/*leistungen*/
+
+.leistungen {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.leistungen__title {
+    margin-bottom: 2rem;
+}
+
+.leistungen__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.leistungen__box {
+    max-width: 20ch;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: rgba(217, 217, 217, 0.2);
+}
+
+.leistungen__name {
+    font-size: 0.9rem;
+}
+
+.leistungen__text {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1.7;
+    letter-spacing: -0.01rem;
+}
+
+/*portfolio*/
+.portfolio {
+    margin-top: 5rem;
+    text-align: center;
+    color: #D9D9D9;
+    background-color: black;
+    height: 30rem;
+    padding-top: 13rem;
+}
+
+/*kontakt*/
+.kontakt {
+    margin-top: 8rem;
+    text-align: center;
+    max-width: 75ch;
+}
+
+.kontakt__title {
+
+}
+
+.kontakt__text {
+    margin: 2rem 0;
+
+}
+
+.kontakt__btn {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: black;
+}
+
+/*vision*/
+.vision {
+    margin-top: 10rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 30rem;
+}
+
+.vision__logo {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    height: 3rem;
+    width: auto;
+}
+
+.vision__text {
+    max-width: 70ch;
+    margin: 2rem auto;
+}
+
+/*collage*/
+
+
+
+.collage__img {
+    width: 100%;
+    height: auto;
+}
+
+/*footer*/
+.footer {
+    height: 10rem;
+    background-color: black;
+}
+
+/*utility*/
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+/*portfolio*/
+
+
+
