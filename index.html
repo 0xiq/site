@@ -1,176 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>WESTRUHR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header container">
         <img src="./images/logo.png" class="header__logo" alt="">
-            <nav class="header__menu">
-                <a href="#">Start</a>
-                <a href="#">Leistungen</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="#">About Us</a>
-                <a href="#">Kontakt</a>
-            </nav>
+        <nav class="header__menu">
+            <a href="./">Start</a>
+            <a href="#leistungen">Leistungen</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
 
-    <section class="hero container">
-        <video autoplay loop muted playsinline class="hero__video">
-            <source src="images/showreel.mp4" type="video/mp4">
-        </video>
+    <nav class="mobile-nav">
+        <a href="./">Start</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
 
+    <section class="hero container">
+        <div class="video-container">
+            <video src="images/showreel.mp4" autoplay loop muted playsinline class="hero__video"></video>
+        </div>
         <h1 class="hero__title">Wir realisieren Ihre Vision</h1>
-        <p class="hero__scroll">Scroll Down</p>
-        <p class="hero__arrow">⬇</p>
     </section>
 
     <section class="trusted">
         <h3 class="trusted__title">Trusted by</h3>
+        <div class="trusted__logos">
+                <img class="trusted__logo" src="./images/FALC-IMMOBILIEN.png" alt="">
+                <img class="trusted__logo" src="./images/DAVIS-BOXING.png" alt="">
+                <img class="trusted__logo" src="./images/HAARGENAU.png" alt="">
+                <img class="trusted__logo" src="./images/BENTLEY.png" alt="">
+                <img class="trusted__logo" src="./images/SIMPLEX-EDUCATION.png" alt="">
+                <img class="trusted__logo" src="./images/PUMA.png" alt="">
+                <img class="trusted__logo" src="./images/THE-HERBALIST.png" alt="">
+                <img class="trusted__logo" src="./images/BURGER-BROTHERS.png" alt="">
+                <img class="trusted__logo" src="./images/OSSPOL.png" alt="">
+                <img class="trusted__logo" src="./images/JORDAN-PROCESS.png" alt="">
+            </div>
     </section>
 
     <section class="catch container">
-        <h3 class="catch__title">Westruhr - Where Creativity meets Excellence</h3>
-        <p class="catch__text">Willst du deine Botschaft mit atemberaubenden Bildern und mitreißenden Geschichten
+        <h3 class="catch__title title">Westruhr - Where Creativity meets Excellence</h3>
+        <p class="catch__text text">Willst du deine Botschaft mit atemberaubenden Bildern und mitreißenden Geschichten
             zum Leben erwecken? Dann bist du bei uns genau richtig!
         </p>
-        <p class="catch__text">"Westruhr" ist deine
+        <p class="catch__text text">"Westruhr" ist deine
             professionelle Kreativschmiede.
         </p>
-        <p class="catch__text"> Wir beherrschen die gesamte Bandbreite der Videoproduktion,
+        <p class="catch__text text"> Wir beherrschen die gesamte Bandbreite der Videoproduktion,
             und unsere Kreativität kennt keine Grenzen.
         </p>
     </section>
 
-    <section class="showreel container">
-        <h3>SHOWREEL</h3>
+    <section class="showreel">
+        <div class="showreel__video-box">
+            <iframe src="https://player.vimeo.com/video/846058706?h=dd935e0dc4" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a class="showreel__btn btn" href="portfolio.html">Portfolio ansehen</a>
     </section>
 
-    <section class="leistungen container">
-        <h3 class="leistungen__title">Leistungen</h3>
+    <section class="leistungen container" id="leistungen">
+        <h3 class="leistungen__title title">Leistungen</h3>
         <div class="leistungen__container">
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Imagevideos</h4>
-            <p class="leistungen__text">
-                Zeige der Welt, wer du wirklich bist! Wir verstehen es,
-                die Essenz deines Unternehmens einzufangen und es in einem
-                beeindruckenden Imagevideo zum Ausdruck zu bringen.
-            </p>
+                <div class="leistungen__box">
+                    <h4 class="leistungen__name">Commercials</h4>
+                    <p class="leistungen__text">
+                        Fessle deine Zuschauer in Sekunden! Unsere kreativen Werbespots werden
+                        die Aufmerksamkeit deiner Kunden erregen und deine Marke ins Rampenlicht rücken.
+                    </p>
+                </div>
+                <div class="leistungen__box">
+                    <h4 class="leistungen__name">Schulungsvideos</h4>
+                    <p class="leistungen__text">
+                        Einzigartige Momente, die den Schulstart unvergesslich machen
+                        - erlebe den Zauber der Einschulung in bewegten Bildern!
+                    </p>
+                </div>
+                <div class="leistungen__box">
+                    <h4 class="leistungen__name">Eventvideos</h4>
+                    <p class="leistungen__text">
+                        Belebe deine Events mit magischen Eventvideos -
+                        unvergessliche Momente für die Ewigkeit festgehalten!
+                    </p>
+                </div>
         </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Erklärvideos</h4>
-            <p class="leistungen__text">
-                Komplexe Ideen einfach erklärt! Wir visualisieren deine Konzepte
-                in klaren, ansprechenden Animationen und Grafiken,
-                um deine Zielgruppe zu begeistern und informieren.
-            </p>
+        <div class="leistungen__container leistungen__box-hide">
+                <div class="leistungen__box">
+                <h4 class="leistungen__name">VLogs</h4>
+                <p class="leistungen__text">
+                    Teile deine Abenteuer mit der Welt! Mit unserer modernen Ausrüstung und unserer
+                    Expertise bringen wir deine VLogs auf ein neues Level.
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Podcasts</h4>
+                <p class="leistungen__text">
+                    Bring deine Stimme zum Klingen! Unser erfahrenes Team unterstützt
+                    dich bei der Produktion von Podcasts, um deine Zuhörer zu inspirieren
+                    und zu unterhalten.
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Interviews</h4>
+                <p class="leistungen__text">
+                    Authentische Stimmen, inspirierende Geschichten -
+                    Entdecke die Kraft unserer fesselnden Interviews!
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Dokumentationen</h4>
+                <p class="leistungen__text">
+                    Fesselnde Geschichten zum Leben erweckt -
+                    Tauche ein in die Welt unserer packenden Dokumentationen!
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Reels & Shorts</h4>
+                <p class="leistungen__text">
+                    Setze Trends und erreiche Millionen! Unsere Social-Media-Experten kreieren
+                    mitreißende Reels, die das Potenzial haben, viral zu gehen.
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Produktfotos</h4>
+                <p class="leistungen__text">
+                    Mach einen bleibenden Eindruck! Unsere erstklassigen Produktfotos
+                    stellen deine Waren ins beste Licht und steigern die Verkaufszahlen.
+                </p>
+            </div>
+            <div class="leistungen__box">
+                <h4 class="leistungen__name">Social Media Pflege</h4>
+                <p class="leistungen__text">
+                    Verbinde dich mit deiner Community! Wir kümmern uns um deine Social-Media-Kanäle
+                    und sorgen dafür, dass deine Marke online präsent und erfolgreich ist.
+                </p>
+            </div>
         </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Commercials</h4>
-            <p class="leistungen__text">
-                Fessle deine Zuschauer in Sekunden! Unsere kreativen Werbespots werden
-                die Aufmerksamkeit deiner Kunden erregen und deine Marke ins Rampenlicht rücken.
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Schulungsvideos</h4>
-            <p class="leistungen__text">
-                Einzigartige Momente, die den Schulstart unvergesslich machen
-                - erlebe den Zauber der Einschulung in bewegten Bildern!
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Eventvideos</h4>
-            <p class="leistungen__text">
-                Belebe deine Events mit magischen Eventvideos -
-                unvergessliche Momente für die Ewigkeit festgehalten!
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">VLogs</h4>
-            <p class="leistungen__text">
-                Teile deine Abenteuer mit der Welt! Mit unserer modernen Ausrüstung und unserer
-                Expertise bringen wir deine VLogs auf ein neues Level.
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Podcasts</h4>
-            <p class="leistungen__text">
-                Bring deine Stimme zum Klingen! Unser erfahrenes Team unterstützt
-                dich bei der Produktion von Podcasts, um deine Zuhörer zu inspirieren
-                und zu unterhalten.
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Interviews</h4>
-            <p class="leistungen__text">
-                Authentische Stimmen, inspirierende Geschichten -
-                Entdecke die Kraft unserer fesselnden Interviews!
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Dokumentationen</h4>
-            <p class="leistungen__text">
-                Fesselnde Geschichten zum Leben erweckt -
-                Tauche ein in die Welt unserer packenden Dokumentationen!
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Reels & Shorts</h4>
-            <p class="leistungen__text">
-                Setze Trends und erreiche Millionen! Unsere Social-Media-Experten kreieren
-                mitreißende Reels, die das Potenzial haben, viral zu gehen.
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Produktfotos</h4>
-            <p class="leistungen__text">
-                Mach einen bleibenden Eindruck! Unsere erstklassigen Produktfotos
-                stellen deine Waren ins beste Licht und steigern die Verkaufszahlen.
-            </p>
-        </div>
-        <div class="leistungen__box">
-            <h4 class="leistungen__name">Social Media Pflege</h4>
-            <p class="leistungen__text">
-                Verbinde dich mit deiner Community! Wir kümmern uns um deine Social-Media-Kanäle
-                und sorgen dafür, dass deine Marke online präsent und erfolgreich ist.
-            </p>
-        </div>
-        </div>
+        <button class="leistungen__btn btn">Mehr anzeigen</button>
     </section>
 
-    <section class="portfolio">
-        <h4>Portfolio</h4>
-        <h4>VIDEO SLIDE SHOW</h4>
-    </section>
-
-    <section class="kontakt container">
-        <h3 class="kontakt__title">Kontakt</h3>
-        <p class="kontakt__text">
+    <section class="kontakt container" id="kontakt">
+        <h3 class="kontakt__title title">Kontakt</h3>
+        <p class="kontakt__text text">
             Vertraue auf unser erfahrenes Team von Videoproduzenten,
             Fotografen und Social-Media-Experten, um dein Unternehmen auf die nächste Stufe zu bringen.
         </p>
-        <p class="kontakt__text">
+        <p class="kontakt__text text">
             Kontaktiere uns noch heute und lass uns gemeinsam deine einzigartige Geschichte erzählen!
         </p>
-        <a class="kontakt__btn" href="#">Jetzt kontaktieren</a>
+        <a class="kontakt__btn btn" href="#">Jetzt kontaktieren</a>
     </section>
 
-    <section class="vision">
+    <section class="vision" id="aboutus">
         <img class="vision__logo" src="images/logo.png" alt="a">
-        <p class="vision__text">Gegründet von den talentierten Videographen Gowand und Jason, haben wir uns dem Ziel
+        <p class="vision__text text">Gegründet von den talentierten Videographen Gowand und Jason, haben wir uns dem Ziel
             verschrieben, deine Visionen und Botschaften in einzigartigen Videos zum Leben zu erwecken.
         </p>
-        <p class="vision__text">Bei "Westruhr" steht Kreativität an erster Stelle. Unsere Leidenschaft für visuelle
+        <p class="vision__text text">Bei "Westruhr" steht Kreativität an erster Stelle. Unsere Leidenschaft für visuelle
             Kommunikation und unser Engagement für Exzellenz lassen uns über uns hinauswachsen. Wir verstehen die Macht
             der Bilder und Worte und nutzen sie, um deine Vision zum Leben zu erwecken.
         </p>
+        <a class="vision__btn btn" href="#kontakt">Jetzt kontaktieren</a>
     </section>
 
     <section class="collage container">
@@ -178,8 +185,19 @@
     </section>
 
     <footer class="footer">
-
+        <div class="footer__socials-container">
+            <a target=”_blank” href="https://www.instagram.com"><img class="footer__socials" src="./images/instagram1.svg" alt=""></a>
+            <a target=”_blank” href="https://www.tiktok.com"><img class="footer__socials" src="./images/tiktok1.svg" alt=""></a>
+            <a target=”_blank” href="https://www.linkedin.com"><img class="footer__socials" src="./images/linkedin1.svg" alt=""></a>
+            <a target=”_blank” href="https://www.vimeo.com"><img class="footer__socials" src="./images/vimeo1.svg" alt=""></a>
+        </div>
+        <div class="footer__links">
+            <a href="">Impressum</a>
+            <span>|</span>
+            <a href="">Datenschutz</a>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
